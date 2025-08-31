@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADVENTURE</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="nav-bar">
+        <h2 class="nav-heading">ADVENTURE</h2>
+        <ul class="nav-links">
+            <li><a class="hov-effect" href="#">Home</a></li>
+            <li><a class="hov-effect" href="#">Explore</a></li>
+            <li><a class="hov-effect" href="#">Tours</a></li>
+            <li><a class="hov-effect" href="#">About</a></li>
+            <li class="contact-btn"><a href="#" class="ctn c-btn " style="font-size: 0.9rem;">Contact</a></li>
+        </ul>
+        <span class="menu"></span>
+    </div>
+    <header id="header">
+        <h2 class="heading-1">Explore The Beatyful World</h2>
+        <div class="heading-line"></div>
+        <h1 class="heading-2">A WONDERFUL GIFT</h1>
+        <button class="header-btn ctn">Learn More</button>
+    </header>
+
+        <h2 class="main-heading">Upcoming Events</h2>
+
+    <main class="main-container">
+        
+        <div class="box1 box">
+            <div class="box-image1 "></div>
+            <h2 class="box-heading1">Hills Camping track</h2>
+            <p class="box-para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Iste doloremque qui, aperiam officia mole</p>
+            <button class="box-button1 ctn">Learn More</button>
+        </div>
+        <div class="box2 box">
+            <div class="box-image2"></div>
+            <h2 class="box-heading1">Hills Camping track</h2>
+            <p class="box-para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Iste doloremque qui, aperiam officia mole</p>
+            <button class="box-button1 ctn">Learn More</button>
+        </div>
+        <div class="box3">
+            <div class="box-image3">
+            <h2 class="box-heading3">Explore The Beatyful World</h2>
+            <p class="box-para3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex voluptatem amet 
+                sequi, officia sed, quisquam molestiae quae officiis necessitatibus nobis<br> natus suscipit 
+                animi accusamus odit sapiente accusantium ut blanditiis debitis!</p>
+            <button class="box-button3 ctn">Learn More</button>
+        </div>
+        </div>
+
+        <div class="main-container2">
+            <div class="box4">
+           <h2 class="box-heading1" style="font-size: 2.5rem;">Upcoming Tours And Destinations</h2>
+            <p class="box-para1" style="font-size: 1.2rem;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Iste doloremque qui, aperiam officia mole</p>
+            <button class="box-button1 ctn">Learn More</button>
+            </div>
+            <div class="box5">
+            <div class="box55 box" style="background-image: url(images/para2.jpg);"></div>
+            <div class="box55 box" style="background-image: url(images/para3.jpg);"></div>
+            <div class="box55 box" style="background-image: url(images/para4.jpg);"></div>
+            <div class="box55 box" style="background-image: url(images/para5.jpg);"></div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer-para" style="text-align: center; line-height: 1.9;" >123 Fifth Avenue, NY 10160, New York, USA | Phone: 800-123-456 | Email: contact@example.com
+           <br>Copyright © 2025 Outdoor Adventure</p>
+    </footer>
+
+</body>
+
+<script>
+
+    let menuBtn = document.querySelector(".menu");
+    let navLinks = document.querySelector("#nav-bar .nav-links");
+
+    menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("mobile-links");
+        console.log("sohan");
+    })
+
+</script>
+</html>

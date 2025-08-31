@@ -1,0 +1,424 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'oppins', ans-serif;
+}
+
+html{
+    font-size: 16px;
+}
+
+/* STYLING FOR BODY TAG */
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+/* STYLING FOT HEADER */
+
+#header{
+    width: 100%;
+    min-height: 95vh;
+    background-image: url("images/para5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: whitesmoke;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+/* CREATE A PSUDO ELEMENT FOR DARK BLURE EFFECT */
+
+header::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+
+/* STYLING FOR HEADER-CONTENT */
+
+.heading-line{
+    height: 3px;
+    width: 8rem;
+    background-color: rgb(255, 0, 85);
+    margin-top: 15px;
+}
+
+.heading-2{
+    font-size: 3rem;
+    margin-top: 3.5rem;
+    text-align: center;
+}
+
+.header-btn{
+    margin-top: 2rem;
+}
+
+.ctn{
+    padding: 10px;
+    width: 7rem;
+    background-color:rgb(255, 0, 85) ;
+    border: none;
+    outline: none;
+    border-radius: 1.2rem;
+    color: whitesmoke;
+    cursor: pointer;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctn:hover{
+    background-color: rgb(231, 225, 225);
+    color:rgb(255, 0, 85) ;
+}
+
+.hov-effect:hover{
+    color:rgb(255, 0, 85) ;
+}
+
+
+/* STYLING FOR NAV-BAR */
+
+#nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 3;
+}
+
+.nav-heading{
+    color: whitesmoke;
+    margin-top:1rem;
+    margin-left: 2rem;
+}
+
+.contact-btn{
+    font-size: 0.2rem;
+    margin-top: -0.4rem;
+}
+
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.nav-links li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-right: 1.5rem;
+}
+
+.menu{
+    height: 3rem;
+    width: 3rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    background-image: url("images/menu.png");
+    background-size: cover;
+    display: none;
+}
+
+/* STYLING FOR RESPONSIVE NAV-BAR */
+
+@media (max-width: 700px){
+
+    html{
+        font-size: 12px;
+    }
+
+    .menu{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .nav-heading{
+        position: absolute;
+        top: 1rem;
+        left: 0.5rem;
+    }
+
+    #nav-bar .nav-links {
+       margin-top: -1rem;
+       height: 100vh;
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       background: rgb(86, 48, 121);
+       margin-top: -1100px;
+       transition: all 0.5s ease;
+    }
+
+    #nav-bar .nav-links li{
+       margin: 3rem auto;
+       border-bottom-right-radius: 30%;
+
+    }
+
+    #nav-bar .nav-links.mobile-links{
+       margin-top: -100px;
+        
+    }
+
+    .menu{
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+    }
+}
+
+/* STYLING FOR MAIN CONTANT */
+
+/* upcomign events mani-heading  */
+
+.main-container{
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-heading{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    color: rgb(34, 1, 34) ;
+}
+
+.main-heading::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 6rem;
+    background-color: rgb(255, 0, 85);
+    margin: 10px auto;
+}
+
+/* styling for box1 and two */
+
+.box1 {
+    width: 500px;
+    height: 500px;
+    margin-left: 10%;
+}
+
+.box2 {
+    width: 500px;
+    height: 500px;
+    margin-left: 10%;
+}
+
+.box3{
+    min-width:100%;
+    height: 800px;
+    margin: 60px auto;
+}
+
+/* styling for MAIN-IMAGES */
+
+.box-image1{
+    width: 100%;
+    min-height: 65%;
+    background-image: url("images/hills.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.box-image2{
+    width: 100%;
+    min-height: 65%;
+     background-image: url("images/para.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.box-image3{
+    width: 100%;
+    min-height: 100%;
+    background-image: url("images/sea.jpg");
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* styling for BOX-HEADING */
+
+.box-heading1{
+    text-align: center;
+    margin: 10px auto;
+    font-size: 1.5rem;
+    color: rgb(34, 1, 34) ;
+}
+
+.box-heading3{
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1.5rem;
+    color: whitesmoke ;
+}
+
+/* styling for BOX-PARA  */
+
+.box-para1{
+    text-align:center ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(34, 1, 34);
+}
+
+.box-para3{
+    text-align:center ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.box-button1{
+    margin: 30px auto;
+}
+
+.box-button3{
+    margin: 30px auto;
+}
+
+/* Hover efect */
+
+.box{
+    transition: transform 0.3s ease;
+}
+
+.box:hover{
+    transform: scale(1.05);
+}
+
+/* RESPONSIVE STYLING FOR MAIN CONTENT */
+
+@media (max-width: 768px){
+    .box1{
+        width: 300px;
+        margin: 30px auto;        
+    }
+    
+    .box2{
+        width: 300px;
+        margin: 30px auto;
+    }
+}
+
+
+/* styling for MAIN-CONTAINER2  */
+
+.main-container2{
+    /* box-sizing: border-box; */
+    min-width: 100%;
+    height: auto;
+    width: 100%;
+    margin-bottom: 30px;
+    /* padding: 50px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box4{
+    min-width: 610px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box5{
+    min-width: 680px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin-left: 30px;
+
+}
+
+/* STYLING FOR BOX5-IMAGES */
+
+.box55{
+    height: 220px;
+    width: 45%;
+    margin-left: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* RESPONSIVE STYLING FOR MAIN-CONTAINER2 */
+
+@media (max-width: 768px){
+
+    .main-container2{
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+   
+    .box4{
+        min-width: 350px;
+        max-height: 200px
+    }
+
+    .box5{
+        min-width: 350px;
+        height: auto;
+        margin-left: -20px;
+    }
+
+    .box55{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+}
+
+/* STYLING FOR THE FOOTER */
+
+.footer{
+    min-height: 100px;
+    width: 100%;
+    background-color: rgb(42, 8, 86);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
