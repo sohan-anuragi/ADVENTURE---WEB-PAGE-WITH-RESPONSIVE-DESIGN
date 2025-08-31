@@ -37,7 +37,7 @@ A simple and responsive **adventure-themed web page** built using **HTML, CSS, a
 📧 sohananuragi81@gmail.com  
 🔗 [GitHub](https://github.com/sohan-anuragi) | [LinkedIn](https://www.linkedin.com/in/sohan-anuragi/)
 
-![Alt Text](images/ss1.jpg)
-![Alt Text](images/ss2.jpg)
-![Alt Text](images/ss3.jpg)
-![Alt Text](images/ss4.jpg)
+![Alt Text](images/ss1.png)
+![Alt Text](images/ss2.png)
+![Alt Text](images/ss3.png)
+![Alt Text](images/ss4.png)
